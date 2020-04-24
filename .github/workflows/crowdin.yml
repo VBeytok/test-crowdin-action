@@ -16,7 +16,7 @@ jobs:
     - name: crowdin action
       uses: VBeytok/crowdin-action@1.0.0
       with:
-        debug_metod: true
+        debug_mode: true
         upload_sources: true
         upload_translations: true
         crowdin_branch_name: l10n_branch
