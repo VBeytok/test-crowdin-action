@@ -1,0 +1,33 @@
+name: Crowdin Action Testing
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  synchronize-with-crowdin:
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: crowdin action
+      uses: VBeytok/crowdin-action@master
+      with:
+        debug_mode: true
+        upload_sources: true
+        upload_translations: true
+        crowdin_branch_name: l10n_branch_testing
+        identity: 'config/private/.crowdin.yml'
+        config: 'config/crowdin.yml'
+        dryrun_action: false
+
+        download_translations: true
+        localization_branch_name: l10n_option_branch_testing
+        create_pull_request: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
+        CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
