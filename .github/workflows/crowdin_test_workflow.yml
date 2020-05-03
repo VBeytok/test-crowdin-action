@@ -25,7 +25,7 @@ jobs:
         dryrun_action: false
 
         download_translations: true
-        localization_branch_name: l10n_option_branch_testing
+        localization_branch_name: l10n_option
         create_pull_request: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
