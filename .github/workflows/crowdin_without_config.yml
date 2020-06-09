@@ -28,7 +28,7 @@ jobs:
           translation: 'translations/%two_letters_code%/%original_file_name%'
 
           download_translations: true
-          localization_branch_name: l10n_option_branch_without_config
+          localization_branch_name: wip-translations-update
           create_pull_request: true
           language: 'uk'
         env:
