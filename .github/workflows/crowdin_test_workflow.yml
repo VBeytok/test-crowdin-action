@@ -1,10 +1,6 @@
 name: Crowdin Action Testing
 
 on:
-  # Check for updates every day
-  schedule:
-    - cron:  '0/5 * * * *'
-  
   push:
     branches: [ master ]
 

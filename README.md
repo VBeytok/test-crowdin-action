@@ -6,3 +6,5 @@
 ![](https://github.com/VBeytok/test-crowdin-action/workflows/Crowdin%20Action%20Testing%20without%20config%20file/badge.svg)
 
 ![](https://github.com/VBeytok/test-crowdin-action/workflows/Crowdin%20Action%20Without%20Pushing/badge.svg)
+
+![](https://github.com/VBeytok/test-crowdin-action/workflows/Crowdin%20Action%20Testing%20Schedule/badge.svg)
