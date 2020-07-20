@@ -29,6 +29,8 @@ jobs:
         localization_branch_name: l10n_option
         create_pull_request: true
         
+        pull_request_title: 'New custom pull request'
+        pull_request_body: 'New custom pull request body with text and 😊'
         pull_request_labels: 'bug, test label,one'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
