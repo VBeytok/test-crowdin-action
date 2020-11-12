@@ -19,7 +19,7 @@ jobs:
         with:
           debug_mode: true
           upload_sources: true
-          upload_translations: true
+          upload_translations: false
           crowdin_branch_name: l10n_branch_testing
           identity: 'config/private/.crowdin.yml'
           config: 'config/crowdin.yml'
