@@ -17,6 +17,7 @@ jobs:
       uses: crowdin/github-action@master
       with:
         debug_mode: true
+        
         upload_sources: true
         upload_translations: true
         
