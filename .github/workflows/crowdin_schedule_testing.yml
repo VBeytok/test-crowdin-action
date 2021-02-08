@@ -1,9 +1,10 @@
 name: Crowdin Action Schedule Testing
 
 on:
+  workflow_dispatch:
   # Check for updates every day
   schedule:
-    - cron:  '* * * * *'
+    - cron:  '*/1 * * * *'
 
 jobs:
   synchronize-with-crowdin:
