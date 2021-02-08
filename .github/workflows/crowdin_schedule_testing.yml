@@ -3,7 +3,7 @@ name: Crowdin Action Schedule Testing
 on:
   # Check for updates every day
   schedule:
-    - cron:  '0/5 0 * * *'
+    - cron:  '* * * * *'
 
 jobs:
   synchronize-with-crowdin:
