@@ -1,6 +1,7 @@
 name: Crowdin Action Testing
 
 on:
+  workflow_dispatch:
   push:
     branches: [ master ]
 
