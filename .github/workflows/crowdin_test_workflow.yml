@@ -28,7 +28,7 @@ jobs:
 
         download_translations: true
         skip_untranslated_files: false
-        download_language: eo
+        download_language: uk
         commit_message: 'New custom commit message'
         localization_branch_name: l10n_option
 
