@@ -18,7 +18,7 @@ jobs:
         with:
           debug_mode: true
           upload_translations: true
-          crowdin_branch_name: l10n_branch_testing_without_config
+          crowdin_branch_name: 'l10n branch_testing_without_config'
           dryrun_action: false
 
           project_id: ${{ secrets.CROWDIN_PROJECT_ID }}
